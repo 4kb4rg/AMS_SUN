@@ -1,0 +1,212 @@
+﻿body
+{
+	background-color: Black;
+	background-image: url(en/images/BottomBg.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	min-width: 1024px;
+	min-height: 600px;
+}
+.view
+{
+    margin-top:200px;
+    width:571px;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.gallery
+{
+    position:relative;
+    height:400px;
+    width:571px;
+    z-index:101;
+}
+.gallery ul
+{
+    padding-left:80px;
+    margin:0px;
+    width:571px;
+    position:absolute;
+    bottom:0px;
+    list-style-type:none;
+    list-style-position:outside;
+}
+.gallery li
+{
+    display:inline;
+    margin-left:0px;
+    list-style:none;
+}
+.info img
+{
+    position:relative;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    top:45px;
+    z-index:300;
+}
+.info
+{
+    float:left;
+    height:170px;
+    width:130px;
+}
+.annotation
+{
+    position:absolute;
+    height:159px;
+    width:192px;
+    bottom:-159px;
+    background-repeat:no-repeat;
+    z-index:99;
+}
+.tooltip
+{
+    display:none;
+    position:absolute;
+    top:-240px;
+    left:0px;
+    width:571px;
+    height:270px;
+    z-index:200;
+}
+
+.description
+{
+	color:#e3e3e3;
+    display:none;
+    padding:0px 20px 5px 20px;
+    overflow:auto;
+    font-family:Calibri;
+    text-align:left;
+    width:531px;
+    height:265px;
+    z-index:202;
+}
+.description p
+{
+    margin-left:275px;
+    margin-top:85px;
+    height:130px;
+    font-family:Verdana;
+    font-size:12px;
+    line-height:20px;
+}
+.info:hover .tooltip .description
+{
+    display:block;
+}
+.info:hover .tooltip, .info a:active + .tooltip, .info a:active + .tooltip .description, .info a:focus + .tooltip, .info a:focus + .tooltip .description
+{
+    display:block;
+}
+/*
+.info a:active + .tooltip, .info a:focus + .tooltip
+{
+    background-image:url(webshowcase/thumbs/background.png);
+}
+*/
+.info:hover .tooltip
+{
+    z-index:100;
+}
+.description:hover
+{
+    z-index:202;
+    display:block;
+}
+.info a:focus + .tooltip .annotation, .info a:active + .tooltip .annotation
+{
+    display:none;
+}
+.portfolio:hover .annotation, .portfolio a:focus + .tooltip .annotation, .portfolio a:active + .tooltip .annotation
+{
+    background-image:url(webshowcase/thumbs/portfoliohover.jpg);
+}
+.portfolio .annotation
+{
+   left:49px;
+}
+.portfolio .description
+{
+    background-image:url(webshowcase/thumbs/portfoliopop.jpg);
+}
+.agent:hover .annotation, .agent a:focus + .tooltip .annotation, .agent a:active + .tooltip .annotation
+{
+    background-image:url(webshowcase/thumbs/agentmanagementhover.jpg);
+}
+.agent .annotation
+{
+    left:180px;
+}
+.agent .description
+{
+    background-image:url(webshowcase/thumbs/agentmanagementpop.jpg);
+}
+.customer:hover .annotation, .customer a:focus + .tooltip .annotation, .customer a:active + .tooltip .annotation
+{
+    background-image:url(webshowcase/thumbs/infradashboardhover.jpg);
+}
+.customer .annotation
+{
+    left:308px;
+}
+.customer .description
+{
+    background-image:url(webshowcase/thumbs/infradashboardpop.jpg);
+}
+.launchbutton
+{
+    width:77px;
+    position:absolute;
+    left:295px;
+    bottom:50px;
+}
+.launchbutton img
+{
+    position:static;
+    border:none 0px;
+}
+.launchbutton:hover
+{
+    text-decoration:underline;
+}
+
+.defaultdescription
+{
+	display: block;
+	z-index: 100;
+}
+.defaultdescription p
+{
+	text-align:center;
+    margin:0px;
+    padding:0px;
+}
+.BackgroundTopCorner
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 450px;
+	height: 372px;
+	z-index: 100;
+	background-image: url(en/images/topBG.jpg);
+	background-repeat: no-repeat;
+}
+.show
+{
+    display:block;
+}
+
+#header {
+	position: absolute;
+	height: 72px;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	background-image: url(n/eimages/hdr_bg.jpg);
+	background-repeat: repeat-x;
+}
